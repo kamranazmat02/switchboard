@@ -46,9 +46,8 @@ async def voice_incoming(request: Request) -> Response:
     """
 
     await _verify_twilio_signature(request)
-    twiml = """<?xml version="1.0" encoding="UTF-8"?>
-    <Response>
-        <Say voice="Polly.Aoife-Neural" language="en-IE">Hello from Switchboard.</Say>
+    twiml = """<Response>
+        <Say voice="Polly.Amy" language="en-GB">Hello from Switchboard.</Say>
         <Hangup/>
     </Response>"""
 
