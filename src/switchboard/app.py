@@ -50,8 +50,7 @@ async def voice_incoming(request: Request) -> Response:
     <Response>
         <Say voice="Polly.Aoife-Neural" language="en-IE">Hello from Switchboard.</Say>
         <Hangup/>
-    </Response>
-    """
+    </Response>"""
 
     return Response(content=twiml, media_type="application/xml")
  
